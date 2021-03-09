@@ -1,0 +1,38 @@
+body {
+  margin: 20px;
+}
+h1 {
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #409daa;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Gentium Basic", serif;
+  color: #105754;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+h3 {
+  font-family: "Gentium Basic", serif;
+  color: #0d3d3b;
+  font-weight: 900;
+  text-decoration: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+p {
+  font-family: "Gentium Basic", serif;
+}
+
+img {
+  display: block;
+}
