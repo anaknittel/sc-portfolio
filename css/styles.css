@@ -1,38 +1,55 @@
+:root {
+  --primary-blue: #409daa;
+  --secondary-blue: #0d3d3b;
+  --neutral-color: #fff;
+  --secondary-bg-color: #f2f2f2;
+  --primary-font: "Source Sans Pro", sans-serif;
+  --secondary-font: "Major Mono Display", monospace;
+}
+
 body {
-  margin: 20px;
+  font-family: var(--primary-font);
 }
-h1 {
-  font-family: "Sue Ellen Francisco", cursive;
-  color: #409daa;
-  margin-top: 100px;
-  margin-bottom: 20px;
+
+.hero {
+  background: var(--secondary-bg-color);
   font-weight: 900;
+  text-align: center;
+  padding: 100px 20px 150px 20px;
+}
+
+.hero h1 {
+  font-family: var(--secondary-font);
+  color: var(--primary-blue);
+  margin-top: 20px;
+  margin-bottom: 30px;
   font-size: 80px;
-  text-align: center;
 }
 
-h2 {
-  font-family: "Gentium Basic", serif;
-  color: #105754;
-  font-weight: 900;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 100px;
+.hero h2 {
+  color: var(--secondary-blue);
+  font-size: 40px;
 }
 
-h3 {
-  font-family: "Gentium Basic", serif;
-  color: #0d3d3b;
-  font-weight: 900;
+.hero h3 {
+  color: var(--secondary-blue);
   text-decoration: bold;
   font-size: 20px;
-  text-align: center;
-  margin-bottom: 100px;
-}
-p {
-  font-family: "Gentium Basic", serif;
+  padding-bottom: 100px;
 }
 
-img {
-  display: block;
+.button {
+  color: var(--neutral-color);
+  text-decoration: none;
+  background-color: var(--primary-blue);
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+:hover .button {
+  color: var(--neutral-color);
+}
+
+:visited .button {
+  color: var(--neutral-color);
 }
