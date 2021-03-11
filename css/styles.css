@@ -1,6 +1,6 @@
 :root {
   --primary-blue: #409daa;
-  --secondary-blue: #0d3d3b;
+  --secondary-blue: #163e3b;
   --neutral-color: #fff;
   --secondary-bg-color: #f2f2f2;
   --primary-font: "Source Sans Pro", sans-serif;
@@ -15,7 +15,7 @@ body {
   background: var(--secondary-bg-color);
   font-weight: 900;
   text-align: center;
-  padding: 100px 20px 150px 20px;
+  padding: 80px 20px 150px 20px;
 }
 
 .hero h1 {
@@ -26,19 +26,20 @@ body {
   font-size: 80px;
 }
 
-.hero h2 {
+.hero h2,
+.hp-content h2 {
   color: var(--secondary-blue);
   font-size: 40px;
 }
 
 .hero h3 {
   color: var(--secondary-blue);
-  text-decoration: bold;
+  font-weight: 900px;
   font-size: 20px;
   padding-bottom: 100px;
 }
 
-.button {
+.hero .button {
   color: var(--neutral-color);
   text-decoration: none;
   background-color: var(--primary-blue);
@@ -52,4 +53,92 @@ body {
 
 :visited .button {
   color: var(--neutral-color);
+}
+
+.separation hr {
+  display: block;
+  margin: auto 300px;
+  color: var(--secondary-blue);
+  height: 2px;
+  border-radius: 5px;
+}
+
+.separation p {
+  text-decoration: bold;
+  font-weight: 900;
+}
+
+.hp-content {
+  text-align: center;
+}
+
+.hp-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hp-content .row {
+  background-color: rgba(64, 157, 170, 0.1);
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.hp-content h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--secondary-blue);
+  margin: 15px auto;
+}
+
+.hp-content .col-sm-6 p {
+  text-align: justify;
+  margin-bottom: 60px;
+}
+
+.hp-content .button {
+  border-radius: 4px;
+  margin-bottom: 50px;
+  color: #686b73;
+  padding: 15px 25px;
+  text-decoration: none;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--secondary-blue);
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 80px 15px 80px 15px;
+  }
+  .hero h1 {
+    margin-top: 25px;
+    font-size: 50px;
+  }
+
+  .hero h3 {
+    font-size: 18px;
+    padding-bottom: 60px;
+    line-height: 1.5;
+  }
+
+  .separation hr {
+    margin: auto 50px;
+    height: 1px;
+  }
+
+  .hp-content img {
+    display: none;
+  }
+
+  .hp-content .row {
+    padding: 20px;
+    margin: auto 15px;
+  }
+
+  .hp-content h2 {
+    font-size: 25px;
+  }
+
+  .hp-content .col-sm-6 p {
+    margin-bottom: 50px;
+  }
 }
