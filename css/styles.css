@@ -23,7 +23,11 @@ body {
   text-align: center;
   padding: 80px 20px 150px 20px;
 }
-
+.contact-hero{
+  background: -webkit-linear-gradient(top, var(--primary-bg-coral), var(--primary-bg-coral) 250px, white 1%, white);
+  text-align: center;
+  padding: 80px 20px 150px 20px;
+}
 .hero h1 {
   font-family: var(--secondary-font);
   color: var(--primary-blue);
@@ -138,6 +142,14 @@ color: rgba(240, 122, 76);
   margin-bottom: 100px;
 }
 
+
+.contact-hero h1{
+  font-size: 80px;
+  color: var(--primary-blue);
+  font-family: var(--secondary-font);
+  text-align: center;
+  margin-bottom: 100px;
+}
 .about-hero .col-sm-6{
   text-decoration: none;
   font-size: 40px;
@@ -150,8 +162,6 @@ color: rgba(240, 122, 76);
  width: 100%;
  border-radius: 4px;
 }
-
-.work-container-content
 
 .container-content{
   display: flex;
@@ -197,12 +207,47 @@ font-size: 25px;
     display: none;
   }
 
+.contact-col{
+text-align: left;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: black;
+margin-top: 40px;
+font-size: 20px;
+
+}
+
+:hover .contact-link {
+  color: var(--neutral-color);
+}
+
+:visited .contact-link {
+  color: var(--neutral-color);
+}
+.contact-container{
+  background-color: rgba(64, 157, 170, 0.1);
+  padding: 40px;
+  border-radius: 4px;
+}
+.content-sp{
+display: none;
+}
 @media (max-width: 770px){
   .sm-lt-br{
     display: block;
   }
   
 
+.laptop{
+  display: none;
+}
+
+
+.smartphone{
+  display: block;
+}
 }
 
 @media (max-width: 576px) {
@@ -258,7 +303,9 @@ font-size: 25px;
   background: -webkit-linear-gradient(top, var(--primary-bg-coral), var(--primary-bg-coral) 12%, white 1%, white);
 }
 
-
+.contact-container .smartphone{
+  padding: 300px
+}
 
 .laptop{
   display: none;
