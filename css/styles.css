@@ -3,16 +3,57 @@
   --secondary-blue: #163e3b;
   --neutral-color: #fff;
   --primary-bg-coral: rgba(240, 122, 76, 0.3);
+  --transparent: rgba(240, 122, 76, 0);
   --secondary-bg-coral: rgba(240, 122, 76);
   --terciary-bg: rgba(64, 157, 170, 0.1);
   --primary-font: "Source Sans Pro", sans-serif;
   --secondary-font: "Major Mono Display", monospace;
-  --padding-hero: 80px 20px 150px 20px;
+  --padding-hero: 20px 20px 150px 20px;
 }
 
 body {
   font-family: var(--primary-font);
   text-align: center;
+}
+
+.container-nav {
+  background-color: var(--transparent);
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 100px;
+  font-size: 14px;
+  margin-right: 0px;
+  text-align: right;
+}
+
+nav li {
+  display: inline-flex;
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav a,
+:hover a,
+:visited a {
+  text-decoration: none;
+  color: black;
+}
+.active-link {
+  color: var(--secondary-blue);
+  weight: 900px;
+}
+
+.about-hero nav,
+.contact-hero nav {
+  margin-bottom: 0px;
+}
+
+.about-hero .container-nav {
+  padding-bottom: 40px;
+}
+
+.contact-hero .container-nav {
+  padding-bottom: 20px;
 }
 
 .hero {
@@ -43,6 +84,12 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+.about-hero h1,
+.contact-hero h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
 .about-hero h1,
 .contact-hero h1 {
   text-align: center;
@@ -209,7 +256,12 @@ body {
 .contact-container {
   background-color: var(--terciary-bg);
   padding: 40px;
+  padding-top: 0px;
   border-radius: 4px;
+}
+
+.contact-par {
+  font-size: 16px;
 }
 
 .content-sp,
@@ -228,100 +280,97 @@ body {
     display: none;
   }
 
-@media (max-width: 576px) {
-  .sm-lt-br,
-  .hp-content img,
-  .laptop {
-    display: none;
+  @media (max-width: 576px) {
+    .sm-lt-br,
+    .hp-content img,
+    .laptop {
+      display: none;
+    }
+
+    .smartphone {
+      display: block;
+    }
+
+    .hero {
+      padding: 80px 15px 80px 15px;
+    }
+
+    .hero h1 {
+      margin-top: 25px;
+    }
+
+    .about-hero h1,
+    .hero h1 {
+      font-size: 50px;
+    }
+
+    .hp-content h2 {
+      font-size: 25px;
+    }
+
+    .hero h3 {
+      font-size: 18px;
+      line-height: 1.5;
+      padding-bottom: 60px;
+    }
+
+    .separation hr {
+      height: 1px;
+      margin: auto 50px;
+    }
+
+    .hp-content .row {
+      padding: 20px;
+      margin: auto 15px;
+    }
+
+    .hp-content .col-sm-6 p {
+      margin-bottom: 50px;
+    }
+
+    .about-hero {
+      background: -webkit-linear-gradient(
+        top,
+        var(--primary-bg-coral),
+        var(--primary-bg-coral) 12%,
+        white 1%,
+        white
+      );
+    }
+
+    .contact-container .smartphone {
+      padding: 300px;
+    }
+
+    .about-button {
+      color: var(--primary-blue);
+      text-decoration: none;
+      border-radius: 4px;
+      border: solid 1px var(--secondary-blue);
+      background-color: white;
+      padding: 15px 20px;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+
+    .about-text {
+      font-size: 22px;
+    }
+
+    .intro {
+      margin-bottom: 80px;
+      line-height: 2.5;
+    }
+
+    .intro-hl {
+      margin: 40px;
+    }
+
+    .intro-hl-2 {
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      margin-top: 100px;
+    }
   }
-
-  .smartphone {
-    display: block;
-  }
-
-  .hero {
-    padding: 80px 15px 80px 15px;
-  }
-
-  .hero h1 {
-    margin-top: 25px;
-  }
-
-  .about-hero h1,
-  .hero h1
-   {
-    font-size: 50px;
-  }
-
-  .hp-content h2 {
-    font-size: 25px;
-  }
-
-  .hero h3 {
-    font-size: 18px;
-    line-height: 1.5;
-    padding-bottom: 60px;
-  }
-
-  .separation hr {
-    height: 1px;
-    margin: auto 50px;
-  }
-
-  .hp-content .row {
-    padding: 20px;
-    margin: auto 15px;
-  }
-
-
-  .hp-content .col-sm-6 p {
-    margin-bottom: 50px;
-  }
-
-
-  .about-hero {
-    background: -webkit-linear-gradient(
-      top,
-      var(--primary-bg-coral),
-      var(--primary-bg-coral) 12%,
-      white 1%,
-      white
-    );
-  }
-
-  .contact-container .smartphone {
-    padding: 300px;
-  }
-
-  .about-button {
-    color: var(--primary-blue);
-    text-decoration: none;
-    border-radius: 4px;
-    border: solid 1px var(--secondary-blue);
-    background-color: white;
-    padding: 15px 20px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-  }
-
-  .about-text {
-    font-size: 22px;
-  }
-
-  .intro {
-    margin-bottom: 80px;
-    line-height: 2.5;
-  }
-
-  .intro-hl {
-    margin: 40px;
-  }
-
-  .intro-hl-2 {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
-    margin-top: 100px;
-  }
-
 }
