@@ -87,13 +87,7 @@ nav a,
 .about-hero h1,
 .contact-hero h1 {
   text-align: center;
-  margin-bottom: 100px;
-}
-
-.about-hero h1,
-.contact-hero h1 {
-  text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .hero h1,
@@ -124,13 +118,15 @@ nav a,
 }
 
 .hero .button,
-.about-hero .button {
+.about-hero .button,
+footer .button {
   background-color: var(--primary-blue);
 }
 
 .hero .button,
 .hp-content .button,
-.about-hero .button {
+.about-hero .button,
+footer .button {
   border-radius: 4px;
   text-decoration: none;
   padding: 15px 20px;
@@ -270,6 +266,34 @@ nav a,
   display: none;
 }
 
+footer a,
+:visited footer a,
+:hover footer a {
+  text-decoration: none;
+  color: var(--secondary-blue);
+}
+
+footer .icons a {
+  padding: 0px 10px 100px 10px;
+}
+
+.email {
+  margin: 60px 0px 20px 0px;
+}
+
+.contact-box {
+  background: var(--terciary-bg);
+  border-radius: 4px;
+  padding: 40px 50px;
+  margin-top: 100px;
+}
+
+footer .button {
+  border: none;
+  height: 60px;
+  color: white;
+}
+
 @media (max-width: 770px) {
   .sm-lt-br,
   .smartphone {
@@ -345,11 +369,12 @@ nav a,
       margin-bottom: 50px;
     }
 
-    .about-hero {
+    .about-hero,
+    .contact-hero {
       background: -webkit-linear-gradient(
         top,
         var(--primary-bg-coral),
-        var(--primary-bg-coral) 12%,
+        var(--primary-bg-coral) 250px,
         white 1%,
         white
       );
